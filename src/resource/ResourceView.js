@@ -173,8 +173,8 @@ function ResourceView(element, calendar, viewName) {
 		bodyCellTopInners = bodyRows.eq(0).find('div.fc-day-content div');
 		
 		// trigger resourceRender callback now when the skeleton is ready
-		body.find('td.fc-resourceName').each(function(resourceElement) {
-			trigger('resourceRender', resources[i], resources[i], resourceElement);
+		body.find('td.fc-resourceName').each(function(i, resourceElement) {
+			trigger('resourceRender', resources[i], resourceElement, viewName);
 		});
 
 		// marks first+last th's
