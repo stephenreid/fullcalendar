@@ -1,3 +1,8 @@
+version 1.6.1.2 (9/25/13)
+	- Fixed a bug in ResourceNextWeeks starting day calculation
+	- Fixed issue #41 (event is not showing if endtime - starttime < 30 minute)
+	- Fixed issue #50 (certain events are located in wrong days in monthview when using weekends: false)
+
 version 1.6.1.1 (5/11/13)
 	- Merged with latest Fullcalendar version 1.6.1
 	- Fixed issue #29 Resize does not work when event is 1 day and weekends off
