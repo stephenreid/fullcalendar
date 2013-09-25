@@ -214,8 +214,9 @@ function DayEventRenderer() {
 				// hack for resourceDay view
 				leftCol = timeOfDayCol(seg.start);
 				rightCol = timeOfDayCol(seg.end)-1;
-				
-				if(rightCol <= leftCol) rightCol++;
+
+				if(((seg.end-seg.start)/1000/60) < opt('slotMinutes')) leftCol--;
+
 			}
 			
 			if (rtl) {
