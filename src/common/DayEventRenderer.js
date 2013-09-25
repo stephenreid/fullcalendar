@@ -214,6 +214,8 @@ function DayEventRenderer() {
 				// hack for resourceDay view
 				leftCol = timeOfDayCol(seg.start);
 				rightCol = timeOfDayCol(seg.end)-1;
+				
+				if(rightCol <= leftCol) rightCol++;
 			}
 			
 			if (rtl) {
