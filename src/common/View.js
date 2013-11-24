@@ -22,7 +22,14 @@ function View(element, calendar, viewName) {
 	t.hideEvents = hideEvents;
 	t.eventDrop = eventDrop;
 	t.eventResize = eventResize;
-	// t.title
+	t.getShownEvents = function () {
+    evs = [];
+    for (id in eventElementsByID){
+      evs = evs.concat(eventsByID[id]);
+    }
+    return evs;
+  };
+  // t.title
 	// t.start, t.end
 	// t.visStart, t.visEnd
 	
