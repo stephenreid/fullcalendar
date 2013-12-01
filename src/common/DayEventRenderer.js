@@ -176,7 +176,7 @@ function DayEventRenderer() {
 					weekendSumColEnd=0
 					
 					for(var j=0; j<=leftCol; j++) {
-						weekendTestDate = addDays(cloneDate(t.visStart), j);
+						weekendTestDate = addDays(cloneDate(t.start), j);
 						
 						if(weekendTestDate.getDay() == 0 || weekendTestDate.getDay() == 6) {
 							weekendSumColStart++;
@@ -187,7 +187,7 @@ function DayEventRenderer() {
 					if (seg.start.getDay() == 6 || seg.start.getDay() == 0) leftCol++;
 					
 					for(j=0; j<=rightCol; j++) {
-						weekendTestDate = addDays(cloneDate(t.visStart), j);
+						weekendTestDate = addDays(cloneDate(t.start), j);
 						
 						if(weekendTestDate.getDay() == 0 || weekendTestDate.getDay() == 6) {
 							weekendSumColEnd++;
